@@ -1,0 +1,313 @@
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: italic;
+  }
+
+body {
+    font-size: 24px;
+    color: black;
+    background-color: white;
+    text-align: center;
+    font-family: "Montserrat", "Times New Roman", sans-serif;
+}
+.header h1 {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    display: flex;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+navbar {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar p {
+    display: inline-block;
+    padding: 10px 10px;
+}
+
+p {
+    display: flex;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+a {
+    color: black;
+    font-weight: bold;
+}
+
+.mission {
+    display: flex;
+    height: 500px;
+    background-image: url(https://content.codecademy.com/PRO/independent-practice-projects/flexbox-business-site/img/skyscrapers.jpg);
+    background-size: cover;
+    padding-top: 35px;
+}
+
+.mission .content {
+    margin: auto;
+    background-color: white;
+    width: 100%; 
+}
+
+#portfolio {
+    display: flex;
+    margin-top: 2em;
+}
+#portfolio .content {
+    width: 100%; 
+}
+
+.companies {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    row-gap: 10px;
+    
+}
+
+.companies .company {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+    
+    
+}
+
+.company img {
+    width: 250px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px;
+    border: 5px solid grey;
+    border-style: ridge;
+}
+
+.company span {
+    min-width: 240px;
+    text-align: center;
+    font-weight: bold;  
+}
+
+#team-container {
+    margin-top: 50px;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-image: url(https://content.codecademy.com/PRO/independent-practice-projects/flexbox-business-site/img/blurred-road.jpg);
+    background-size: cover;
+}
+
+.teammate {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 280px;
+    color: white;
+    padding: 10px;
+    margin: 0;
+}
+
+.teammate img {
+    height: 300px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2, h3, h4, p {
+    
+    margin: 0;
+    padding: 10px;
+    letter-spacing: 5px;
+    
+}
+.teammate h3 {
+    display: flex;
+}
+
+.contact {
+    padding-top: 50px;
+}
+
+.copyright {
+    margin-top: 80px;
+    padding-bottom: 5px;
+}
+
+.contact h5, .copyright h5 {
+    letter-spacing: 5px;
+}
+
+
+@media only screen and (max-width: 926px) {
+    .main {
+        position:relative;
+        top: 69px;
+    }
+    
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 69px;
+    }
+    .companies {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    .companies img {
+        width: 35%;
+        height: 35%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .companies .company {
+        justify-content: center;
+    }
+    .team {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    .teammate img {
+        max-width: auto;
+        max-height: auto;
+        margin-left: 5px;
+        margin-right: 10px;
+    }
+    .teammate {
+        padding: 10px 10px;
+        justify-content: left;
+    }
+    .teammate h3, .teammate p {
+        flex-direction: row;
+        width: min-content;
+        font-weight: bold;
+    }
+    .teammate h3 {
+        font-weight: bolder;
+    }
+    .header h1 {
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+        background-color: white;
+    }
+    .content h2, .contact h2 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 428px) and (orientation: portrait) {
+    .header h1 {
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+        background-color: white;
+        border-bottom: 1px solid black;
+    }
+
+    body {
+        font-size: medium;
+    }
+
+    .content h2, .contact h2 {
+        display: none;
+    }
+
+    .main {
+        position:relative;
+        top: 69px;
+    }
+    
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 69px;
+    }
+
+    .team {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    .teammate img {
+        max-width: auto;
+        max-height: auto;
+        margin-left: 5px;
+        margin-right: 10px;
+    }
+    .teammate {
+        padding: 10px 10px;
+        justify-content: space-around;
+    }
+    .teammate h3, .teammate p {
+        flex-direction: row;
+        width: min-content;
+        font-weight: bold;
+    }
+
+    .teammate h3 {
+        font-weight: bolder;
+    }
+
+    .teammate p {
+        width: 100%;
+    }
+    .content h2, .contact h2 {
+        display: none;
+    }
+
+    .contact h5, .copyright h5 {
+        font-size: 60%;
+    }
+    .copyright {
+        margin-top: 30px;
+    }
+
+}
+
