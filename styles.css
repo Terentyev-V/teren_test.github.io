@@ -40,8 +40,10 @@ navbar {
 }
 
 .navbar p {
-    display: inline-block;
+    display: inline-flex;
     padding: 10px 10px;
+    justify-content: center;
+
 }
 
 p {
@@ -268,7 +270,15 @@ h2, h3, h4, p {
         flex-direction: column;
         position: relative;
         top: 69px;
+        padding-bottom: 10px;
     }
+
+    .navbar p {
+        justify-content: left;
+        padding: 0;
+    }
+
+    
 
     .team {
         display: flex;
